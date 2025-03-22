@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "RadhaSphere Wallet",
   description: "Your secure gateway to Web3",
   icons: {
-    icon: '/favicon.svg',
+    icon: '/radhasphere-full.svg',
   },
 };
 
