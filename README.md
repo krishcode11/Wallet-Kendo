@@ -2,7 +2,7 @@
 
 A modern Web3 wallet dashboard built with Next.js, React, and KendoReact components. This project was developed for the KendoReact Free Components Challenge.
 
-![RadhaSphere Wallet](public/screenshot.png)
+![RadhaSphere Wallet](public/logos/radhasphere-dark.svg)
 
 ## Features
 
