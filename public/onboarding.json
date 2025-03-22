@@ -1,0 +1,175 @@
+{
+  "version": "1.0",
+  "theme": {
+    "primaryColor": "#3b82f6",
+    "secondaryColor": "#1e40af",
+    "backgroundColor": "#f9fafb"
+  },
+  "steps": [
+    {
+      "id": "welcome",
+      "title": "Welcome to RadhaSphere",
+      "description": "Your gateway to the multi-chain crypto universe. Securely manage, trade, and grow your digital assets in one place.",
+      "image": "/assets/animations/welcome.json",
+      "animationType": "lottie",
+      "ctaText": "Get Started",
+      "isSkippable": false
+    },
+    {
+      "id": "security",
+      "title": "Bank-Grade Security",
+      "description": "RadhaSphere employs advanced encryption and security measures to keep your assets safe. Your keys are stored only on your device.",
+      "image": "/assets/animations/security.json",
+      "animationType": "lottie",
+      "ctaText": "Next",
+      "isSkippable": false
+    },
+    {
+      "id": "wallet_options",
+      "title": "Create or Import Wallet",
+      "description": "Start fresh with a new wallet or import your existing one using a recovery phrase.",
+      "options": [
+        {
+          "id": "create_new",
+          "title": "Create New Wallet",
+          "icon": "plus-circle",
+          "nextStepId": "backup_phrase"
+        },
+        {
+          "id": "import_existing",
+          "title": "Import Existing Wallet",
+          "icon": "download",
+          "nextStepId": "import_wallet"
+        }
+      ],
+      "isSkippable": false,
+      "isDecisionStep": true
+    },
+    {
+      "id": "backup_phrase",
+      "title": "Your Recovery Phrase",
+      "description": "Write down these 12 words in order and keep them in a safe place. This is the only way to recover your wallet if you lose access.",
+      "image": "/assets/banners/seed_phrase.png",
+      "ctaText": "I've Written It Down",
+      "requireConfirmation": true,
+      "confirmationPrompt": "I understand that if I lose my recovery phrase, I will not be able to access my funds",
+      "isSkippable": false
+    },
+    {
+      "id": "verification",
+      "title": "Verify Recovery Phrase",
+      "description": "Please select the words in the correct order to confirm you've saved your recovery phrase.",
+      "type": "seed_verification",
+      "ctaText": "Confirm",
+      "isSkippable": false
+    },
+    {
+      "id": "import_wallet",
+      "title": "Import Your Wallet",
+      "description": "Enter your 12 or 24-word recovery phrase to import your existing wallet.",
+      "type": "seed_input",
+      "ctaText": "Import Wallet",
+      "isSkippable": false
+    },
+    {
+      "id": "secure_access",
+      "title": "Secure Your Access",
+      "description": "Set up a password to protect your wallet. You can also enable biometric authentication for quicker access.",
+      "options": [
+        {
+          "id": "password",
+          "title": "Set Password",
+          "required": true,
+          "type": "password_setup"
+        },
+        {
+          "id": "biometric",
+          "title": "Enable Biometric",
+          "required": false,
+          "type": "biometric_setup",
+          "dependsOnDevice": true
+        }
+      ],
+      "ctaText": "Continue",
+      "isSkippable": false
+    },
+    {
+      "id": "networks",
+      "title": "Choose Your Networks",
+      "description": "Select the blockchain networks you want to use. You can always change this later.",
+      "networks": [
+        {
+          "id": "ethereum",
+          "name": "Ethereum",
+          "icon": "/assets/logos/ethereum.png",
+          "isDefault": true
+        },
+        {
+          "id": "bsc",
+          "name": "BNB Chain",
+          "icon": "/assets/logos/bnb.png",
+          "isDefault": true
+        },
+        {
+          "id": "polygon",
+          "name": "Polygon",
+          "icon": "/assets/logos/polygon.png",
+          "isDefault": true
+        },
+        {
+          "id": "avalanche",
+          "name": "Avalanche",
+          "icon": "/assets/logos/avalanche.png",
+          "isDefault": false
+        },
+        {
+          "id": "solana",
+          "name": "Solana",
+          "icon": "/assets/logos/solana.png",
+          "isDefault": false
+        }
+      ],
+      "ctaText": "Continue",
+      "isSkippable": true
+    },
+    {
+      "id": "preferences",
+      "title": "Personalize Your Experience",
+      "description": "Select your preferred currency and appearance settings.",
+      "options": [
+        {
+          "id": "currency",
+          "type": "dropdown",
+          "label": "Currency",
+          "values": ["USD", "EUR", "GBP", "JPY", "AUD", "CAD", "INR"],
+          "default": "USD"
+        },
+        {
+          "id": "theme",
+          "type": "toggle",
+          "label": "Dark Mode",
+          "default": false
+        },
+        {
+          "id": "notifications",
+          "type": "toggle",
+          "label": "Enable Notifications",
+          "default": true
+        }
+      ],
+      "ctaText": "Finish Setup",
+      "isSkippable": true
+    },
+    {
+      "id": "complete",
+      "title": "You're All Set!",
+      "description": "Your RadhaSphere wallet is ready to use. Start exploring the crypto universe securely and seamlessly.",
+      "image": "/assets/animations/success.json",
+      "animationType": "lottie",
+      "ctaText": "Enter Dashboard",
+      "isSkippable": false,
+      "isFinal": true
+    }
+  ],
+  "fallbackFlow": ["welcome", "security", "wallet_options", "secure_access", "networks", "complete"]
+} 
