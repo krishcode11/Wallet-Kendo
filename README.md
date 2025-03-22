@@ -50,7 +50,7 @@ This project demonstrates the use of 12+ KendoReact Free Components:
 
 1. Clone the repository
    ```
-   git clone https://github.com/yourusername/radhasphere-wallet.git
+   git clone https://github.com/krishcode11/Wallet-Kendo
    ```
 
 2. Install dependencies
@@ -64,7 +64,7 @@ This project demonstrates the use of 12+ KendoReact Free Components:
    npm run dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+4. Open [https://radhaspherewallet.netlify.app/](https://radhaspherewallet.netlify.app/) in your browser
 
 ## Project Structure
 
@@ -95,7 +95,7 @@ The theme was customized using Progress ThemeBuilder and exported to maintain co
 
 ## Deployment
 
-The project is deployed on [Vercel/Netlify] at [your-deployment-url].
+The project is deployed on Netlify] at https://radhaspherewallet.netlify.app/.
 
 ## License
 
