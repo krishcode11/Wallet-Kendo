@@ -73,7 +73,7 @@ export default function Navbar() {
             { label: "Home", path: "/" },
             { label: "Send/Receive", path: "/send-receive" },
             { label: "NFTs", path: "/nfts" },
-            { label: "AI Insights", path: "/ai-insights" },
+            { label: "AI Insights", path: "/aiinsights" },
             { label: "Settings", path: "/settings" },
           ].map(({ label, path }) => (
             <Button
