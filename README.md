@@ -95,7 +95,7 @@ The theme was customized using Progress ThemeBuilder and exported to maintain co
 
 ## Deployment
 
-The project is deployed on Netlify] at https://radhaspherewallet.netlify.app/.
+The project is deployed on Netlify at https://rswallet.netlify.app/.
 
 ## License
 
