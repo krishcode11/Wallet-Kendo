@@ -64,7 +64,7 @@ This project demonstrates the use of 12+ KendoReact Free Components:
    npm run dev
    ```
 
-4. Open [https://radhaspherewallet.netlify.app/](https://radhaspherewallet.netlify.app/) in your browser
+4. Open [RadhaSphere Wallet](https://rswallet.netlify.app/) in your browser
 
 ## Project Structure
 
